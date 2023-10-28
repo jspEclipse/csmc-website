@@ -1,11 +1,7 @@
-import "./App.css";
-
-function App() {
+export default function Root() {
   return (
     <main>
       <h1>CSMC</h1>
     </main>
   );
 }
-
-export default App;
