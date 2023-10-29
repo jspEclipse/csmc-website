@@ -1,3 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap");
+
+html {
+  --font-fira-code: "Fira Code", monospace;
+
+  --color-background: #18181b;
+  --color-foreground: #27272a;
+  --color-foreground-2: #202022;
+  --color-muted: #71717a;
+  --color-accent: #3b82f6;
+  --color-txt: #f4f4f5;
+  --color-accent-alt: #ff6631;
+
+  font-family: var(--font-fira-code);
+  background-color: var(--color-foreground);
+  color: var(--color-txt);
+}
+
 * {
   box-sizing: border-box;
+}
+
+svg {
+  background-color: var(--color-foreground);
+  max-height: 80vh;
+}
+
+text {
+  fill: var(--color-txt);
+  font-size: 18px;
+}
+
+.b1 {
+  --x-start: 4%;
+  --x-end: 72%;
+  --y: 30%;
+  --y-start: var(--y);
+  --y-end: calc(var(--y));
+  --scale: 1.95;
+}
+
+.b2 {
+  --x: 0%;
+  --x-start: var(--x);
+  --x-end: calc(var(--x));
+  --y-start: 25%;
+  --y-end: 85%;
+  --scale: 1;
+}
+
+.transform-interpolate {
+  transform: translate(
+      calc(var(--x-start) + var(--frac) * (var(--x-end) - var(--x-start))),
+      calc(var(--y-start) + var(--frac) * (var(--y-end) - var(--y-start)))
+    )
+    scale(var(--scale));
+}
+
+.csmc-transition {
+  transition: transform 0.8s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.other-letter {
+  transform: translate(
+      calc(var(--x-start) + var(--x-frac) * (var(--x-end) - var(--x-start))),
+      calc(var(--y-start) + var(--y-frac) * (var(--y-end) - var(--y-start)))
+    )
+    scale(var(--scale));
+  --x-end: 100%;
+  --x-frac: calc((1 + var(--letter-x)) / (var(--word-length) - 1 + 1));
+  --y-frac: calc(var(--letter-y) / (var(--lines) - 1));
+}
+
+.b1 .other-letter {
+  display: none;
 }
