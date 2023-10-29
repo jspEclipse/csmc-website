@@ -24,7 +24,7 @@ export default function Root() {
   const wordLength = otherLetters[0].length + 1;
   const otherLettersView = otherLetters.flatMap((letters, y) =>
     letters.map((letter, x) => (
-      <text
+      <g
         key={`${x}-${y}`}
         className="other-letter"
         style={{
@@ -34,8 +34,8 @@ export default function Root() {
           "--lines": lines,
         }}
       >
-        {letter}
-      </text>
+        <text>{letter}</text>
+      </g>
     ))
   );
 
@@ -45,30 +45,31 @@ export default function Root() {
       className={`${whichB ? "b1" : "b2"}`}
       onClick={() => setWhichB((w) => !w)}
     >
-      <text
+      {/* NOTE: percentages in CSS transform:translate don't work right on <text> in Safari, so we wrap it in a <g> and animate that (https://stackoverflow.com/a/61398694) */}
+      <g
         className="transform-interpolate csmc-transition"
         style={{ "--frac": 0 / 3 }}
       >
-        C
-      </text>
-      <text
+        <text>C</text>
+      </g>
+      <g
         className="transform-interpolate csmc-transition"
         style={{ "--frac": 1 / 3 }}
       >
-        S
-      </text>
-      <text
+        <text>S</text>
+      </g>
+      <g
         className="transform-interpolate csmc-transition"
         style={{ "--frac": 2 / 3 }}
       >
-        M
-      </text>
-      <text
+        <text>M</text>
+      </g>
+      <g
         className="transform-interpolate csmc-transition"
         style={{ "--frac": 3 / 3 }}
       >
-        C
-      </text>
+        <text>C</text>
+      </g>
       {otherLettersView}
     </svg>
   );
