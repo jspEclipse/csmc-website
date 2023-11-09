@@ -3,17 +3,22 @@
 html {
   --font-fira-code: "Fira Code", monospace;
 
-  --color-background: #18181b;
-  --color-foreground: #27272a;
-  --color-foreground-2: #202022;
-  --color-muted: #71717a;
-  --color-accent: #3b82f6;
-  --color-txt: #f4f4f5;
-  --color-accent-alt: #ff6631;
+  --color-oberlin-red1: rgb(186, 59, 66);
+  --color-oberlin-red2: rgb(158, 39, 59);
+  --color-oberlin-red3: rgb(140, 40, 56);
+  --color-lightblue: #7baaf5;
+
+  --color-obiesource-background: #18181b;
+  --color-obiesource-foreground: #27272a;
+  --color-obiesource-foreground-2: #202022;
+  --color-obiesource-muted: #71717a;
+  --color-obiesource-accent: #3b82f6;
+  --color-obiesource-txt: #f4f4f5;
+  --color-obiesource-accent-alt: #ff6631;
 
   font-family: var(--font-fira-code);
-  background-color: var(--color-foreground);
-  color: var(--color-txt);
+  background-color: var(--color-obiesource-foreground);
+  color: var(--color-obiesource-txt);
 }
 
 * {

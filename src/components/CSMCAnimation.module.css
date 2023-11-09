@@ -1,5 +1,5 @@
 .svg {
-  background-color: var(--color-foreground);
+  background-color: var(--color-obiesource-foreground);
   width: min(80vh, 90vw);
   height: min(80vh, 90vw);
 }
@@ -25,7 +25,7 @@
 }
 
 .text {
-  fill: var(--color-txt);
+  fill: var(--color-obiesource-txt);
   font-size: 18px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .csmcTransition text {
-  fill: #7baaf5;
+  fill: var(--color-oberlin-red1);
 }
 
 .otherLetter {
