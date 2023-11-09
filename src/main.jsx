@@ -9,12 +9,20 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Root from "./routes/root";
+import Charter from "./routes/charter";
+import Tshirts from "./routes/tshirts";
+import Officers from "./routes/officers";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Root />} />
       <Route path="about" element={<h1>About</h1>} />
+      <Route path="charter" element={<Charter />} />
+      <Route path="officers" element={<Officers />} />
+      <Route path="tshirts" element={<Tshirts />} />
+
+      {/* TODO: php */}
     </>
   ),
   { basename: "/csmc-website/" }
