@@ -48,6 +48,10 @@ export default function CSMCAnimation() {
       }
       onClick={() => setAnimationStarted((w) => !w)}
     >
+      <text x={1} y={9} className={style.oberlin}>
+        Oberlin
+      </text>
+
       {/* NOTE: percentages in CSS transform:translate don't work right on <text className={style.text}> in Safari, so we wrap it in a <g> and animate that (https://stackoverflow.com/a/61398694) */}
       <g className={style.csmcTransition} style={{ "--frac": 0 / 3 }}>
         <text className={style.text}>C</text>

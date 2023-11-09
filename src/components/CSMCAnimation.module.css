@@ -82,3 +82,17 @@
       scale(var(--scale));
   }
 }
+
+.oberlin {
+  /* font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase; */
+  font-weight: 900;
+  fill: var(--color-oberlin-red3);
+  font-size: 8px;
+  opacity: 0;
+}
+
+.svgAnimationAfter .oberlin {
+  opacity: 1;
+  transition: opacity 2s;
+}
