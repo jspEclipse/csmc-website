@@ -1,7 +1,10 @@
+import Nav from "../components/Nav";
+
 /* eslint-disable react/no-unescaped-entities */
 export default function Charter() {
   return (
     <>
+      <Nav />
       <h1>Oberlin CS Majors' Committee Charter</h1>
 
       <h2>Purpose & Responsibilities</h2>

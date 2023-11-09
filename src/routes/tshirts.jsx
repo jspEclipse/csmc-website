@@ -1,6 +1,9 @@
+import Nav from "../components/Nav";
+
 export default function Tshirts() {
   return (
     <>
+      <Nav />
       <h1>Annual CS T-Shirt Designs</h1>
       <p>
         In the spring of each year since time untold, the students of the OCCS

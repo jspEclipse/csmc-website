@@ -1,3 +1,5 @@
+import Nav from "../components/Nav";
+
 export default function Officers() {
   // prettier-ignore
   const officersHtml = <>
@@ -367,9 +369,10 @@ export default function Officers() {
   );
 
   return (
-    <div>
+    <>
+      <Nav />
       {officersHtml}
       {notes}
-    </div>
+    </>
   );
 }

@@ -1,0 +1,28 @@
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+  padding: 0rem 0rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  z-index: 1;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    height: 6rem;
+    font-size: 25px;
+  }
+
+  .homeLink {
+    width: 60vw;
+  }
+}
+
+.nav a {
+  color: var(--color-obiesource-accent);
+  text-decoration: none;
+}
