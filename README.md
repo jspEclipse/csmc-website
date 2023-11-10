@@ -1,4 +1,4 @@
-# CSMC website
+# Computer Science Majors' Committee website (WIP)
 
 To run the site in development mode, install NodeJS, then run:
 
