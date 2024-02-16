@@ -3,7 +3,7 @@
   top: 0;
   display: flex;
   width: 100%;
-  padding: 0rem 0rem;
+  padding: 1rem 1rem;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
@@ -11,9 +11,9 @@
   font-size: 18px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .nav {
-    height: 6rem;
+    height: 4rem;
     font-size: 25px;
   }
 
@@ -25,4 +25,14 @@
 .nav a {
   color: var(--color-obiesource-accent);
   text-decoration: none;
+}
+
+.nav_bar {
+  z-index: 0;
+  position: absolute;
+  height: 4rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
 }
