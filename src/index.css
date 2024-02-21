@@ -21,6 +21,10 @@ html {
   color: var(--color-obiesource-txt);
 }
 
+a {
+  color: #9bedff;
+}
+
 * {
   box-sizing: border-box;
 }

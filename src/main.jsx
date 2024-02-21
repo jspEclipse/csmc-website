@@ -12,6 +12,7 @@ import Root from "./routes/root";
 import Charter from "./routes/charter";
 import Tshirts from "./routes/tshirts";
 import Officers from "./routes/officers";
+import Resources from "./routes/resources";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="charter" element={<Charter />} />
       <Route path="officers" element={<Officers />} />
       <Route path="tshirts" element={<Tshirts />} />
+      <Route path="resources" element={<Resources />} />
 
       {/* TODO: php */}
     </>
