@@ -15,6 +15,7 @@ export default function Nav() {
           <Link to="/charter">Charter</Link>
           <Link to="/officers">Officers</Link>
           <Link to="/tshirts">T-Shirts</Link>
+          <Link to="/resources">Resources</Link>
         </nav>
       </div>
     </>
