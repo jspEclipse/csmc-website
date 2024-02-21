@@ -1,5 +1,23 @@
 [
   {
+    "year": "Spring 2024",
+    "structured": false,
+    "members": [
+      { "name": "Abby Tejera Rocha", "email": "atejera" },
+      { "name": "Ajai Nelson", "email": "anelson3" },
+      { "name": "Ben Toker", "email": "btoker" },
+      { "name": "Dan Ha Le", "email": "dle3" },
+      { "name": "Elise Schwarz-Saccamano", "email": "eschwarz" },
+      { "name": "Ezra Crowe", "email": "ecrowe" },
+      { "name": "Jack Page", "email": "jpage" },
+      { "name": "Jenny Rowlett", "email": "jrowlett" },
+      { "name": "Kerensa Fu", "email": "kfu2" },
+      { "name": "Lawrence Wright", "email": "lwright" },
+      { "name": "Menard Simoya", "email": "msimoya" },
+      { "name": "Saida Ibragimova", "email": "sibragim" }
+    ]
+  },
+  {
     "year": "Fall 2023",
     "structured": false,
     "members": [
@@ -23,7 +41,6 @@
       { "name": "Zaina Saleem", "email": "zsaleem" }
     ]
   },
-
   {
     "year": "Spring 2023",
     "structured": false,
@@ -41,7 +58,6 @@
       { "name": "William Knowles-Kellett", "email": "wknowles" }
     ]
   },
-
   {
     "year": "Fall 2022",
     "structured": false,
